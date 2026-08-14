@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const whatsappNumber = "9779860151288";
+  const whatsappNumber = "9779769686049";
 
   const copy = {
     en: {
@@ -23,8 +23,8 @@
       afterShort: "On-model result",
       trustOne: "Usually within 24 hrs",
       trustOneSub: "Fast local delivery",
-      trustTwo: "From Rs 200",
-      trustTwoSub: "Per approved image",
+      trustTwo: "Rs 299",
+      trustTwoSub: "Per approved HD image",
       trustThree: "Human reviewed",
       trustThreeSub: "Before final delivery",
       audienceEyebrow: "Built for local fashion sellers",
@@ -40,22 +40,33 @@
       audienceClothingDetail: "Catalogues and online listings",
       workEyebrow: "Real transformations",
       workTitle: "See exactly what changes.",
-      workBody: "Each garment input is shown beside its generated on-model result. These are test outputs, not stock-photo mockups.",
+      workBody: "Browse every complete before-and-after test currently in our gallery. Each garment input is shown beside its generated on-model result.",
+      galleryCount: "complete transformations",
       whatYouSend: "What you send",
       whatYouReceive: "What you receive",
-      viewMore: "View 2 more transformations",
-      viewLess: "Show fewer examples",
       multiAngle: "Additional back view",
       brazilAudience: "Instagram boutique",
       brazilTitle: "Summer co-ord",
       jerseyAudience: "Jersey store",
       jerseyTitle: "Fan jersey",
-      jacketAudience: "Fashion seller",
-      jacketTitle: "Statement jacket",
+      patchworkAudience: "Fashion seller",
+      patchworkTitle: "Patchwork denim jacket",
       kurtaAudience: "Local tailor",
       kurtaTitle: "Custom kurta",
       suitAudience: "Formalwear store",
       suitTitle: "Tailored suit",
+      blazerAudience: "Formalwear seller",
+      blazerTitle: "Black blazer",
+      denimAudience: "Local clothing brand",
+      denimTitle: "Nepal denim jacket",
+      jeansAudience: "Streetwear store",
+      jeansTitle: "Baggy jeans",
+      airbornAudience: "Vintage store",
+      airbornTitle: "Airborn jacket",
+      teeAudience: "Streetwear brand",
+      teeTitle: "Oversized black tee",
+      o2Audience: "Retro jersey seller",
+      o2Title: "O₂ / Henry jersey",
       demoNote: "Demo images from NoCast testing. Replace third-party branded samples with authorised client products before a full commercial campaign.",
       processEyebrow: "Simple service, no new app to learn",
       processTitle: "From WhatsApp to ready-to-post files.",
@@ -74,9 +85,14 @@
       freeName: "First sample",
       freePrice: "Rs 0",
       freeDetail: "One watermarked preview for eligible first-time businesses.",
-      packName: "Starter pack",
-      packPrice: "Rs 599",
-      packDetail: "3 approved HD images for one garment and one selected model.",
+      packName: "Final image",
+      packPrice: "Rs 299",
+      packDetail: "1 approved HD image for one garment and one selected model.",
+      valueBadge: "Best value",
+      valueName: "Business package",
+      valuePrice: "Rs 999",
+      valueDetail: "15 approved HD photos for your product catalogue and social posts.",
+      valueButton: "Ask about this package",
       priceNote: "One revision included · Final price confirmed before work starts",
       faqEyebrow: "Before you order",
       faqTitle: "Clear answers for small businesses.",
@@ -114,8 +130,8 @@
       afterShort: "मोडलमा बनेको फोटो",
       trustOne: "सामान्यतया २४ घण्टाभित्र",
       trustOneSub: "छिटो स्थानीय डेलिभरी",
-      trustTwo: "रु २०० देखि",
-      trustTwoSub: "प्रति स्वीकृत फोटो",
+      trustTwo: "रु २९९",
+      trustTwoSub: "प्रति स्वीकृत HD फोटो",
       trustThree: "मानिसले जाँचिएको",
       trustThreeSub: "अन्तिम डेलिभरीअघि",
       audienceEyebrow: "स्थानीय फेसन व्यवसायका लागि",
@@ -131,22 +147,33 @@
       audienceClothingDetail: "क्याटलग र अनलाइन लिस्टिङ",
       workEyebrow: "वास्तविक रूपान्तरण",
       workTitle: "फरक स्पष्ट देख्नुहोस्।",
-      workBody: "तपाईंले पठाएको कपडा र त्यसबाट बनेको मोडल फोटो सँगै देखाइएको छ। यी हाम्रो परीक्षणका वास्तविक नतिजा हुन्।",
+      workBody: "हाम्रो ग्यालरीमा उपलब्ध सबै अघि र पछि परीक्षण हेर्नुहोस्। प्रत्येक कपडाको फोटोसँग त्यसबाट बनेको मोडल फोटो देखाइएको छ।",
+      galleryCount: "पूर्ण रूपान्तरण",
       whatYouSend: "तपाईंले पठाउने",
       whatYouReceive: "तपाईंले पाउने",
-      viewMore: "अझै २ रूपान्तरण हेर्नुहोस्",
-      viewLess: "कम उदाहरण देखाउनुहोस्",
       multiAngle: "पछाडिको थप दृश्य",
       brazilAudience: "इन्स्टाग्राम बुटिक",
       brazilTitle: "समर को-अर्ड सेट",
       jerseyAudience: "जर्सी पसल",
       jerseyTitle: "फ्यान जर्सी",
-      jacketAudience: "फेसन विक्रेता",
-      jacketTitle: "स्टेटमेन्ट ज्याकेट",
+      patchworkAudience: "फेसन विक्रेता",
+      patchworkTitle: "प्याचवर्क डेनिम ज्याकेट",
       kurtaAudience: "स्थानीय टेलर",
       kurtaTitle: "कस्टम कुर्ता",
       suitAudience: "फर्मलवेयर पसल",
       suitTitle: "टेलर्ड सुट",
+      blazerAudience: "फर्मलवेयर विक्रेता",
+      blazerTitle: "कालो ब्लेजर",
+      denimAudience: "स्थानीय कपडा ब्रान्ड",
+      denimTitle: "नेपाल डेनिम ज्याकेट",
+      jeansAudience: "स्ट्रिटवेयर पसल",
+      jeansTitle: "ब्यागी जिन्स",
+      airbornAudience: "भिन्टेज पसल",
+      airbornTitle: "एयरबोर्न ज्याकेट",
+      teeAudience: "स्ट्रिटवेयर ब्रान्ड",
+      teeTitle: "ओभरसाइज कालो टिसर्ट",
+      o2Audience: "रेट्रो जर्सी विक्रेता",
+      o2Title: "O₂ / Henry जर्सी",
       demoNote: "NoCast को परीक्षणबाट बनेका डेमो फोटो। पूर्ण व्यावसायिक अभियानअघि तेस्रो पक्षका ब्रान्डेड नमुनालाई अनुमति प्राप्त ग्राहकका प्रोडक्टले बदल्नुहोस्।",
       processEyebrow: "सरल सेवा—नयाँ एप सिक्नुपर्दैन",
       processTitle: "WhatsApp बाट पोस्ट गर्न तयार फाइलसम्म।",
@@ -165,9 +192,14 @@
       freeName: "पहिलो नमुना",
       freePrice: "रु ०",
       freeDetail: "पहिलो पटक आउने योग्य व्यवसायका लागि एउटा वाटरमार्क नमुना।",
-      packName: "स्टार्टर प्याक",
-      packPrice: "रु ५९९",
-      packDetail: "एउटा कपडा र छानिएको मोडलका ३ वटा स्वीकृत HD फोटो।",
+      packName: "अन्तिम फोटो",
+      packPrice: "रु २९९",
+      packDetail: "एउटा कपडा र छानिएको मोडलको १ स्वीकृत HD फोटो।",
+      valueBadge: "सबैभन्दा किफायती",
+      valueName: "व्यावसायिक प्याकेज",
+      valuePrice: "रु ९९९",
+      valueDetail: "प्रोडक्ट क्याटलग र सामाजिक सञ्जालका लागि १५ स्वीकृत HD फोटो।",
+      valueButton: "यो प्याकेजबारे सोध्नुहोस्",
       priceNote: "१ पटक सुधार समावेश · काम सुरु गर्नुअघि अन्तिम मूल्य स्पष्ट गरिन्छ",
       faqEyebrow: "अर्डर गर्नुअघि",
       faqTitle: "सानो व्यवसायका लागि स्पष्ट जवाफ।",
@@ -189,25 +221,27 @@
   };
 
   let currentLanguage = "en";
-  let expanded = false;
 
-  const whatsappMessage = (language) => language === "ne"
-    ? "नमस्ते NoCast Studio! मेरो कपडा व्यवसायका लागि निःशुल्क नमुना चाहियो। व्यवसायको प्रकार: ____"
-    : "Namaste NoCast Studio! I run a clothing business and would like a free sample. My business type is: ____";
-
-  const updateWhatsAppLinks = () => {
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage(currentLanguage))}`;
-    document.querySelectorAll(".whatsapp-link").forEach((link) => link.setAttribute("href", url));
+  const whatsappMessages = {
+    en: {
+      sample: "Namaste NoCast Studio! I run a clothing business and would like a free sample. My business type is: ____",
+      single: "Namaste NoCast Studio! I would like the Rs 299 final-image service. I will send my garment photo.",
+      package: "Namaste NoCast Studio! I am interested in the Rs 999 package for 15 photos. My business type is: ____"
+    },
+    ne: {
+      sample: "नमस्ते NoCast Studio! मेरो कपडा व्यवसायका लागि निःशुल्क नमुना चाहियो। व्यवसायको प्रकार: ____",
+      single: "नमस्ते NoCast Studio! मलाई रु २९९ को अन्तिम फोटो सेवा चाहियो। म कपडाको फोटो पठाउँछु।",
+      package: "नमस्ते NoCast Studio! मलाई रु ९९९ मा १५ फोटोको प्याकेजबारे जानकारी चाहियो। व्यवसायको प्रकार: ____"
+    }
   };
 
-  const updateMoreButton = () => {
-    const button = document.getElementById("more-transformations");
-    if (!button) return;
-    const label = button.querySelector("[data-i18n]");
-    const arrow = button.querySelector("b");
-    if (label) label.textContent = copy[currentLanguage][expanded ? "viewLess" : "viewMore"];
-    if (arrow) arrow.textContent = expanded ? "↑" : "↓";
-    button.setAttribute("aria-expanded", String(expanded));
+  const updateWhatsAppLinks = () => {
+    document.querySelectorAll(".whatsapp-link").forEach((link) => {
+      const intent = link.getAttribute("data-wa-intent") || "sample";
+      const message = whatsappMessages[currentLanguage][intent] || whatsappMessages[currentLanguage].sample;
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      link.setAttribute("href", url);
+    });
   };
 
   const setLanguage = (language) => {
@@ -233,23 +267,11 @@
 
     try { window.localStorage.setItem("nocast-language", currentLanguage); } catch (_) {}
     updateWhatsAppLinks();
-    updateMoreButton();
   };
 
   document.querySelectorAll("[data-language]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.getAttribute("data-language")));
   });
-
-  const moreButton = document.getElementById("more-transformations");
-  const moreGrid = document.getElementById("more-grid");
-  if (moreButton && moreGrid) {
-    moreButton.addEventListener("click", () => {
-      expanded = !expanded;
-      moreGrid.hidden = !expanded;
-      updateMoreButton();
-      if (expanded) moreGrid.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    });
-  }
 
   let storedLanguage = "en";
   try { storedLanguage = window.localStorage.getItem("nocast-language") || "en"; } catch (_) {}

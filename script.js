@@ -8,6 +8,7 @@
       pageTitle: "NoCast Studio Nepal — AI product photos for clothing businesses",
       announcement: "One free sample for selected Nepali clothing businesses",
       navWork: "Results",
+      navMotion: "Motion",
       navProcess: "How it works",
       navPricing: "Pricing",
       languageLabel: "Language",
@@ -68,6 +69,14 @@
       o2Audience: "Retro jersey seller",
       o2Title: "O₂ / Henry jersey",
       demoNote: "Demo images from NoCast testing. Replace third-party branded samples with authorised client products before a full commercial campaign.",
+      motionEyebrow: "See the transformation",
+      motionTitle: "From reference photos to a complete look.",
+      motionBody: "These short demonstrations show how fixed model images and separate garment references can become styled on-model results.",
+      motionOne: "Graphic tee + denim",
+      motionTwo: "Varsity + cargo",
+      motionThree: "Streetwear set",
+      motionSource: "Technology demonstrations from the FLUX Klein 9B Virtual Try-On LoRA showcase. Final client work is individually reviewed.",
+      motionSourceLink: "View source ↗",
       processEyebrow: "Simple service, no new app to learn",
       processTitle: "From WhatsApp to ready-to-post files.",
       processBody: "We handle the AI tools and quality checks. You only send the garment, choose a direction and approve the result.",
@@ -115,6 +124,7 @@
       pageTitle: "NoCast Studio Nepal — नेपाली कपडा व्यवसायका लागि AI फोटो",
       announcement: "छानिएका नेपाली कपडा व्यवसायका लागि १ निःशुल्क नमुना",
       navWork: "नतिजा",
+      navMotion: "भिडियो",
       navProcess: "कसरी काम गर्छ",
       navPricing: "मूल्य",
       languageLabel: "भाषा",
@@ -175,6 +185,14 @@
       o2Audience: "रेट्रो जर्सी विक्रेता",
       o2Title: "O₂ / Henry जर्सी",
       demoNote: "NoCast को परीक्षणबाट बनेका डेमो फोटो। पूर्ण व्यावसायिक अभियानअघि तेस्रो पक्षका ब्रान्डेड नमुनालाई अनुमति प्राप्त ग्राहकका प्रोडक्टले बदल्नुहोस्।",
+      motionEyebrow: "रूपान्तरण भिडियो",
+      motionTitle: "रेफरेन्स फोटोबाट पूर्ण लुकसम्म।",
+      motionBody: "यी छोटा भिडियोले निश्चित मोडल फोटो र छुट्टाछुट्टै कपडाका रेफरेन्सबाट कसरी स्टाइल गरिएको मोडल नतिजा बन्न सक्छ भन्ने देखाउँछन्।",
+      motionOne: "ग्राफिक टिसर्ट + डेनिम",
+      motionTwo: "भर्सिटी + कार्गो",
+      motionThree: "स्ट्रिटवेयर सेट",
+      motionSource: "FLUX Klein 9B Virtual Try-On LoRA शोकेसका प्रविधि डेमो। ग्राहकका अन्तिम नतिजा प्रत्येक पटक छुट्टै जाँच गरिन्छ।",
+      motionSourceLink: "स्रोत हेर्नुहोस् ↗",
       processEyebrow: "सरल सेवा—नयाँ एप सिक्नुपर्दैन",
       processTitle: "WhatsApp बाट पोस्ट गर्न तयार फाइलसम्म।",
       processBody: "AI टुल र गुणस्तर जाँच हामी गर्छौँ। तपाईंले कपडा पठाउने, मोडल/लुक छान्ने र नतिजा स्वीकृत गर्ने मात्र हो।",
@@ -272,6 +290,29 @@
   document.querySelectorAll("[data-language]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.getAttribute("data-language")));
   });
+
+  const motionVideos = document.querySelectorAll(".motion-card video");
+  const loadMotionVideo = (video) => {
+    const source = video.querySelector("source[data-src]");
+    if (!source) return;
+    source.src = source.dataset.src;
+    source.removeAttribute("data-src");
+    video.load();
+    video.play().catch(() => {});
+  };
+
+  if ("IntersectionObserver" in window) {
+    const motionObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        loadMotionVideo(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "250px 0px" });
+    motionVideos.forEach((video) => motionObserver.observe(video));
+  } else {
+    motionVideos.forEach(loadMotionVideo);
+  }
 
   let storedLanguage = "en";
   try { storedLanguage = window.localStorage.getItem("nocast-language") || "en"; } catch (_) {}

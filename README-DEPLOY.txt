@@ -1,4 +1,4 @@
-NOCAST STUDIO — NETLIFY STATIC VERSION 4
+NOCAST STUDIO — NETLIFY STATIC VERSION 5
 
 This package is the public marketing website only.
 It does not contain the FitRoom API key or the private operator application.
@@ -12,7 +12,7 @@ GITHUB UPDATE
 6. Commit the changes to the branch connected to Netlify (normally main).
 
 IMPORTANT
-- Do not upload the enclosing NoCast-Studio-Netlify-Static-v4 folder itself.
+- Do not upload the enclosing NoCast-Studio-Netlify-Static-v5 folder itself.
 - Do not include package.json, .next, node_modules, .openai, app, or scripts folders.
 - Never put a FitRoom or other API key in this public repository.
 
@@ -27,6 +27,11 @@ Then use Deploys > Trigger deploy > Clear cache and deploy site.
 
 WHATSAPP LINK PREVIEW
 - The package includes a dedicated 1200 × 630 social preview image.
-- After deployment, share https://nocaststudio.netlify.app/?v=4 once if WhatsApp still shows an older cached preview.
+- After deployment, share https://nocaststudio.netlify.app/?v=5 once if WhatsApp still shows an older cached preview.
 
 The WhatsApp destination is configured in script.js and is not printed visibly on the page.
+
+MOTION SHOWCASE
+- The three FAL virtual try-on MP4 demonstrations and their posters are included locally.
+- Videos load only when visitors approach the section, keeping the initial mobile page lighter.
+- Keep assets/video and assets/motion when uploading the website.

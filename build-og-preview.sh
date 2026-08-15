@@ -50,6 +50,6 @@ convert "$preview_tmp_dir/step-two.png" \
   -fill '#e9b43a' -stroke '#18201b' -strokewidth 2 -draw 'circle 897,332 897,307' \
   -stroke '#18201b' -strokewidth 3 -draw 'line 884,332 906,332' \
   -stroke 'none' -fill '#18201b' -draw 'polygon 903,324 912,332 903,340' \
-  -quality 92 assets/og-preview-v4.jpg
+  -quality 92 assets/og-preview-v5.jpg
 
-echo "Created assets/og-preview-v4.jpg"
+echo "Created assets/og-preview-v5.jpg"
